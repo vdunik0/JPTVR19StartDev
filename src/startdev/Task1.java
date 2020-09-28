@@ -5,6 +5,8 @@
  */
 package startdev;
 
+import java.util.Scanner;
+
 /**
  *
  * @author user
@@ -13,8 +15,10 @@ class Task1 {
     public void run(){
         System.out.println("----- Задача 1 ------");
         System.out.println("Введите число градусов по Цельсию: ");
-        // решение задачи
-        System.out.println("По Фарингейту это будет: ");
+        Scanner scanner = new Scanner(System.in);
+        double Cel = scanner.nextDouble();
+        double Far = (Cel * 1.8 + 32) ;
+        System.out.println("По Фарингейту это будет: "+Far +" градусов" );
         System.out.println("----- конец задачи 1 ------");
     }
 }
